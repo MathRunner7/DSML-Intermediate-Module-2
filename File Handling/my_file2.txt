@@ -1,0 +1,5 @@
+Read and Write (‘r+’) :
+Open the file for reading and writing.
+The handle is positioned at the beginning of the file.
+Raises I/O error if the file does not exist.
+Some more dataSome more dataSome more dataSome more dataSome more dataSome more dataSome more dataSome more dataSome more dataSome more dataSome more dataSome more dataSome more dataSome more dataSome more dataSome more data
