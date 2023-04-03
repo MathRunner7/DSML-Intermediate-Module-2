@@ -89,5 +89,5 @@ with open("my_file7.txt", "w") as lines:
 
 with open("my_file7.txt", "r+") as lines:
     # .readline() will read the line at which cursor is present
-    print(lines.readline()) # It will read the entire line at which cursor is present anf then move to next line
+    print(lines.readline())  # It will read the entire line at which cursor is present anf then move to next line
     print(lines.readlines())    # It will read all lines in file and return list of all line
