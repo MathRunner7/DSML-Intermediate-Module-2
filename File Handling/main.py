@@ -27,7 +27,7 @@ To avoid unnecessary code lines and trouble to close r after opening open files 
 """
 with open("my_file2.txt", "r+") as rw:
     rw.read()  # Put the cursor at the end
-    rw.write("Some more data")  # Add a string at the end of line
+    rw.write("Some more data")  # Add x1 string at the end of line
     print("Inside with statement r closed status is:", rw.closed)  # Output is False
 print("Outside with statement r closed status is:", rw.closed)  # File is automatically closed and output is True
 
@@ -53,27 +53,27 @@ with open("my_file4.txt", "w+") as wr:
     wr.read()  # It will not give an error
     wr.write("Data written in Write and Read mode")
 
-# TODO-5: Append Only (‘a’)
+# TODO-5: Append Only (‘x1’)
 """
 Open the file for writing.
 The file is created if it does not exist.
 The handle is positioned at the end of the file.
 The data being written will be inserted at the end, after the existing data.
 """
-with open("my_file5.txt", "a") as ap:
+with open("my_file5.txt", "x1") as ap:
     # Data will remain as it is if file exists
     # ap.read()   # Gives an error io.UnsupportedOperation: not readable
     ap.write("Data written in Append mode")
     # New string will be appended in the last of existing string and no present string will be affected
 
-# TODO-6: Append and Read (‘a+’)
+# TODO-6: Append and Read (‘x1+’)
 """
 Open the file for reading and writing.
 The file is created if it does not exist.
 The handle is positioned at the end of the file.
 The data being written will be inserted at the end, after the existing data.
 """
-with open("my_file6.txt", "a+") as ar:
+with open("my_file6.txt", "x1+") as ar:
     # Data will remain as it is if file exists
     print(ar.read())   # Output: empty as reading cursor it at last index
     ar.seek(0)
