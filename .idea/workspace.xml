@@ -5,11 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1944b896-468d-4cbc-bb10-9e84e385ba3b" name="Changes" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/Calculus/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Error Handling/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Error Handling/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/File Handling/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/File Handling/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/File Handling/my_file2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/File Handling/my_file2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/File Handling/my_file5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/File Handling/my_file5.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/File Handling/my_file6.txt" beforeDir="false" afterPath="$PROJECT_DIR$/File Handling/my_file6.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/File Handling/my_file7.txt" beforeDir="false" afterPath="$PROJECT_DIR$/File Handling/my_file7.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +64,7 @@
       <recent name="C:\Users\THUMMAR\Documents\GitHub\DSML-Intermediate-Module-2\File Handling" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main (3)">
+  <component name="RunManager" selected="Python.main">
     <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DSML-Intermediate-Module-2" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -149,10 +151,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.main (3)" />
+        <item itemvalue="Python.main" />
         <item itemvalue="Python.main (2)" />
         <item itemvalue="Python.main (1)" />
-        <item itemvalue="Python.main" />
+        <item itemvalue="Python.main (3)" />
       </list>
     </recent_temporary>
   </component>

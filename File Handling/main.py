@@ -15,7 +15,7 @@ ro.seek(0)
 ro.close()
 
 # To check status of r use variable_name.closed command
-print(ro.closed)
+print(ro.closed)    # Will return True when file is closed
 
 # TODO-2: Read and Write (‘r+’)
 """
@@ -53,27 +53,27 @@ with open("my_file4.txt", "w+") as wr:
     wr.read()  # It will not give an error
     wr.write("Data written in Write and Read mode")
 
-# TODO-5: Append Only (‘x1’)
+# TODO-5: Append Only (‘a’)
 """
 Open the file for writing.
 The file is created if it does not exist.
 The handle is positioned at the end of the file.
 The data being written will be inserted at the end, after the existing data.
 """
-with open("my_file5.txt", "x1") as ap:
+with open("my_file5.txt", "a") as ap:
     # Data will remain as it is if file exists
     # ap.read()   # Gives an error io.UnsupportedOperation: not readable
     ap.write("Data written in Append mode")
     # New string will be appended in the last of existing string and no present string will be affected
 
-# TODO-6: Append and Read (‘x1+’)
+# TODO-6: Append and Read (‘a+’)
 """
 Open the file for reading and writing.
 The file is created if it does not exist.
 The handle is positioned at the end of the file.
 The data being written will be inserted at the end, after the existing data.
 """
-with open("my_file6.txt", "x1+") as ar:
+with open("my_file6.txt", "a+") as ar:
     # Data will remain as it is if file exists
     print(ar.read())   # Output: empty as reading cursor it at last index
     ar.seek(0)
@@ -83,11 +83,27 @@ with open("my_file6.txt", "x1+") as ar:
     # Because in append mode write cursor is always at the last index
 
 # TODO-7: Handling multiple lines
-with open("my_file7.txt", "w") as lines:
+with open("my_file7.txt", "a+") as lines:
     # .writelines([list as an argument])
+    lines.write("\n New Line")
     lines.writelines(["First Line\n", "Second Line\n", "Third Line\n"])
+
 
 with open("my_file7.txt", "r+") as lines:
     # .readline() will read the line at which cursor is present
-    print(lines.readline())  # It will read the entire line at which cursor is present anf then move to next line
+    print(lines.readline())     # It will read the entire line at which cursor is present anf then move to next line
     print(lines.readlines())    # It will read all lines in file and return list of all line
+
+# TODO-8: Why it is important to close the file?
+"""
+Operating systems limit the number of open files any single process can have.
+This number is typically in the thousands. Operating systems set this limit because,
+if a process tries to open thousands of file descriptors, something is probably wrong with the process.
+Even though thousands of files may seem like a lot, it’s still possible to run into the limit.
+Apart from the risk of running into the limit, keeping files open leaves you vulnerable to losing data.
+In general, Python and the operating system work hard to protect you from data loss.
+But if your program—or computer—crashes, the usual routines may not take place, and open files can get corrupted.
+"""
+with open("my_file1.txt", "r+") as test:
+    print(f"File Handle assigned to read/write file is: {test.fileno()}")
+    # This will print file handle (Integer number) assigned to read/write file named test
